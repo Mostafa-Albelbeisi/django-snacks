@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+        <nav style="color: #fff;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: 500;
+        padding-left: 30px;">
+            <a style="color: #601cfc;" href="{% url 'home' %}">Home </a>
+            <a style="color: #601cfc;" href="{%   url 'about'%}"> About</a>
+
+        </nav>
+    </header>
+    {% block content%}
+    {% endblock content %}
+
+</body>
+
+</html>
